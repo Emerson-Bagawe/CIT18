@@ -5,6 +5,9 @@
     --main-bg:##f0f0f0;
     --main-red:#E2164D;
 }
+strong{
+    color: var(--main-red);
+}
 *{
     box-sizing: border-box;
     margin: 0;
