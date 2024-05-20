@@ -33,7 +33,8 @@ section{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 83vh;
+    height: 81vh;
+    margin-top: 4.5em;
 }
 /*--------------------------------Header Section--------------------------------*/
 .header{
@@ -182,4 +183,47 @@ section{
 .About_img{
     border-radius: 2%;
     height: auto;
+}
+/*--------------------------------Education Section--------------------------------*/
+.Education{
+    color: var(--main-white);
+    text-align: center;
+}
+.Education>h1{
+    font-size: 5em;
+}
+.Grid{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,auto);
+    gap:2rem;
+    padding: 20px;
+    background-color: var(--main-bg);
+}
+.Grid__items{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: var(--main-white);
+    pad: 20px;
+    border-radius: 5px;
+    list-style-position: inside;
+    text-align: start;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.Grid__ul{
+    list-style-type:'\2721';
+}
+.Grid__items > h2{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.Grid__list::before{
+    content: " ";
+    margin-left: .5rem;
 }
