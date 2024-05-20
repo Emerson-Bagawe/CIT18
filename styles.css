@@ -33,8 +33,8 @@ section{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 81vh;
-    margin-top: 4.5em;
+    height: 85vh;
+    margin-top: 5em;
 }
 /*--------------------------------Header Section--------------------------------*/
 .header{
@@ -192,14 +192,20 @@ section{
 .Education>h1{
     font-size: 5em;
 }
+.Education__hr{
+    height: 4px;
+    background-color: var(--main-border);
+    margin: 1.5rem 1rem;
+    border-color: var(--main-border);
+}
 .Grid{
-    
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(6,auto);
     gap:2rem;
     padding: 20px;
     background-color: var(--main-bg);
+    margin-top: -1rem;
 }
 .Grid__items{
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -208,6 +214,7 @@ section{
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
     color: var(--main-white);
     pad: 20px;
     border-radius: 5px;
@@ -226,4 +233,64 @@ section{
 .Grid__list::before{
     content: " ";
     margin-left: .5rem;
+}
+/*--------------------------------Experience Section--------------------------------*/
+.experience{
+    color: var(--main-white);
+}
+.experience>h1{
+    font-size: 5em;
+    text-align: center;
+}
+.experience_art{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    width: 95vw;
+
+}
+.experience__card{
+    background: var(--main-section);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform .2s;
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    text-align: center;
+}
+.experience__card:hover{
+    transform: translateY(-10px);
+}
+.card__img{
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+}
+.card__description{
+    padding: 15px;
+}
+.card__description h3{
+    margin: 0 0 10px 0;
+    color: var(--main-cherry);
+    font-size: 2.5rem;
+}
+.card__description p {
+    color:var(--main-white);
+    font-size: 1.5rem ;
+}
+.experience__description{
+    text-align: center;
+    margin: 2rem 1rem;
+    font-size: 2rem;
+    line-height: 4rem;
 }
