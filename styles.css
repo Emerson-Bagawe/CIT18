@@ -10,7 +10,7 @@
 strong{
     color: var(--main-cherry);
 }
-h1,h2,h3,h4,strong{
+h1,h2,h3,h4{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 p{
@@ -20,6 +20,15 @@ p{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+.light-mode {
+    --main-black:#f2f2f2;
+    --main-white:#505050;
+    --main-section:#505050;
+    --main-grey:#708090;
+    --main-bg:#e6e6e6;
+    --main-cherry:#56aed7;
+    --main-border:#D2042D;
 }
 body{
     line-height: 1.5rem;
@@ -38,9 +47,9 @@ section{
 }
 hr{
     height: 4px;
-    background-color: var(--main-border);
+    background-color: var(--main-cherry);
     margin: 1.5rem 1rem;
-    border-color: var(--main-border);
+    border-color: var(--main-cherry);
 }
 /*--------------------------------Header Section--------------------------------*/
 .header{
@@ -121,7 +130,7 @@ hr{
     height: 31rem;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-border);
+    background-color: var(--main-cherry);
     overflow: hidden;
     border-radius:25%;
 }
@@ -258,7 +267,12 @@ hr{
     width: 95vw;
 }
 .experience__card{
-    background: var(--main-section);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border-radius: 10px;
     overflow: hidden;
     transition: transform .2s;
@@ -302,7 +316,7 @@ hr{
     margin-top: 8.8rem;
 }
 .skill >h1 {
-    color: var(--main-white);
+    color: var(--main-cherry);
     font-size: 5em;
     text-align: center;
 }
@@ -336,7 +350,6 @@ hr{
 }
 .s__card_description{
     padding: 15px;
-    background-color: var(--main-section);
 }
 .s__card_description h3{
     margin: 0 0 10px 0;
@@ -351,7 +364,7 @@ hr{
 }
 /*--------------------------------Project Section--------------------------------*/
 .project{
-    margin-top: 33vw;
+    margin-top: 34rem;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -359,12 +372,14 @@ hr{
 }
 .project>hr{
     width: 85vw;
+    color: var(--main-cherry);
     margin-top: 3rem;
 }
-.project >h1{
-    color: var(--main-white);
+.project>h1{
+    color: var(--main-cherry);
     font-size: 5em;
     text-align: center;
+    margin-top: 3rem;
 }
 .project__art{
     margin-top: 2rem;
