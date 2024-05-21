@@ -177,6 +177,7 @@ hr{
 .About__title {
     align-self: flex-start;
     font-size: 5em;
+    color: var(--main-cherry);
 }
 .About__content{
     text-align: center;
@@ -206,6 +207,7 @@ hr{
 }
 .Education>h1{
     font-size: 5em;
+    color: var(--main-cherry);
 }
 
 .Grid{
