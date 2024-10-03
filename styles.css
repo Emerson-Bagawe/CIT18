@@ -113,7 +113,6 @@ hr{
 .hero > h1{
     text-align: center;
     line-height: 5rem;
-    text-transform: capitalize;
     margin-left: 5rem;
 }
 .hero__pict{
